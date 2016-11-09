@@ -11,6 +11,11 @@ orario::orario(int o, int m, int s) {
     if(o < 0 || o > 23 || m < 0 || m > 59 || s < 0 || s > 59) sec = 0;
     else sec = o * Sec_di_un_Ora + m * 60 + s;
 }
+
+
+
+
+orario::orario(const orario& o) : sec(o.sec)  { }
  
 orario orario::UnOraPiuTardi() const    {
     orario aux;

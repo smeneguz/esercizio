@@ -1,9 +1,8 @@
 
-#include "TELEFONATA_H"
+#include "telefonata.h"
 
-telefonata::telefonata(orario i, orario f, int n){
- inizio = i, fine = f, numero=n;
-	}
+telefonata::telefonata(const orario& i,const orario& f, int n) : inizio(i), fine(f), numero(n) {}
+
 
 telefonata::telefonata() : numero(0) {}
 

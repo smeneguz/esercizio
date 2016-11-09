@@ -1,12 +1,15 @@
 #ifndef ORARIO_H
 #define ORARIO_H
 #include <iostream>
+
 class orario{
     public:
         int Ore() const;
         int Minuti() const;
         int Secondi() const;
         orario(int =0,int =0,int =0);
+
+        orario(const orario &) ;
         orario UnOraPiuTardi() const;
         void AvanzaUnOra();
         orario operator+(orario) const;

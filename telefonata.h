@@ -1,15 +1,15 @@
 #ifndef TELEFONATA_H
 #define TELEFONATA_H
-#include<iostream>
-#include "ORARIO_H"
+//#include <iostream>
+#include "orario.h"
 
 using std::ostream;
 
 class telefonata{
 public:
-	telefonata(orario,orario,int);
+    telefonata(const orario&,const orario&,int);
 	telefonata ();
-	orario Inizio() const;
+    orario Inizio() const;
 	orario Fine() const;
 	int Numero() const;
 	bool operator == (const telefonata&) const;
