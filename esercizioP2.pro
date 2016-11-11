@@ -11,8 +11,10 @@ TEMPLATE = app
 
 SOURCES += main.cpp \
     orario.cpp \
-    telefonata.cpp
+    telefonata.cpp \
+    bolletta.cpp
 
 HEADERS += \
     orario.h \
-    telefonata.h
+    telefonata.h \
+    bolletta.h

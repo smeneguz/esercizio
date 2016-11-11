@@ -1,6 +1,8 @@
 #ifndef ORARIO_H
 #define ORARIO_H
 #include <iostream>
+#include <ostream>
+
 
 class orario{
     public:

@@ -55,5 +55,5 @@ bool orario::operator<(orario O) const {
     else    return false;
 }
 std::ostream& operator<<(std::ostream& os, const orario& o) {
-    return os << o.Ore() << ':' << o.Minuti() << ':' << o. Secondi();
+    return os << o.Ore() << ':' << o.Minuti() << ':' << o. Secondi() << std::endl;
 }

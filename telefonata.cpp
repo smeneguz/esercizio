@@ -28,7 +28,7 @@ bool telefonata::operator== (const telefonata& t) const{
 }
 
 ostream& operator<< (ostream& os, const telefonata& t){
-	return os << "INIZIO" <<t.Inizio() << "FINE" << t.Fine() << "NUMERO CHIAMATO" << t.Numero();
+    return os << "INIZIO " <<t.Inizio() << "FINE " << t.Fine() << "NUMERO CHIAMATO " << t.Numero() << std::endl;
 
 }
 
